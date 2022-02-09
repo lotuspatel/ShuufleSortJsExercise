@@ -1,0 +1,152 @@
+body,
+html {
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+	background-color: #EFEFEF;
+}
+
+.title {
+	text-align: center;
+	color: #000000;
+	font-weight: bold;
+}
+
+.main-container {
+	border-top: 2px solid #BFBFBF;
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+.lhs {
+	width: 80%;
+	float: left;
+}
+
+.rhs {
+	width: 16%;
+	float: right;
+	padding: 2%;
+}
+
+.button {
+	box-shadow: 0px 4px 0px 0px #2B8EAD;
+	background-color: #72C3DC;
+	border-radius: 5px;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	border: none;
+	padding: 15px 30px;
+	margin: 10px 0px;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+  width: 100%;
+}
+
+.button:hover {
+	box-shadow: 0px 4px 0px 0px #72C3DC;
+	background-color: #2B8EAD;
+}
+
+.card-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-item {
+	color: #ffffff;
+	font-weight: bold;
+	padding: 30px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.b1,
+.b8 {
+	background-color: #6F98A8;
+}
+
+.b2,
+.b4 {
+	background-color: #2B8EAD;
+}
+
+.b3,
+.b5,
+.b9 {
+	background-color: #2F454E;
+}
+
+.b6,
+.b7 {
+	background-color: #BFBFBF;
+}
+
+.footer-text {
+	margin: 20px 0 0 0;
+	position: relative;
+	display: block;
+	float: left;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+}
+
+/* For mobile view */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	.title {
+		color: #ffffff;
+		background-color: #333333;
+		padding: 4% 6%;
+		margin: 0;
+		font-weight: normal;
+	}
+	.lhs {
+		width: 100%;
+	}
+	.rhs {
+		width: 100%;
+		text-align: center;
+	}
+	.main-container {
+		background-color: #ffffff;
+		padding: 0 2%;
+		width: 96%;
+	}
+	.card-container {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.card-item {
+		background-color: #EFEFEF;
+		color: #000;
+		margin-bottom: 2%;
+		padding: 10px;
+		font-size: 20px;
+	}
+	.b1,
+	.b8 {
+		border-left: 10px solid #6F98A8;
+	}
+	.b2,
+	.b4 {
+		border-left: 10px solid #2B8EAD;
+	}
+	.b3,
+	.b5,
+	.b9 {
+		border-left: 10px solid #2F454E;
+	}
+	.b6,
+	.b7 {
+		border-left: 10px solid #BFBFBF;
+	}
+  .button { 
+    width: auto;
+  }
+}
